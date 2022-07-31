@@ -13,6 +13,12 @@
       //echo cube(5);
       $cubeResult = cube(4);
       echo $cubeResult;
+
+      function add($n){
+        return $n+$n+$n;
+      }
+      $addResult = add(10);
+      echo $addResult;
     ?>
   </body>
 </html>

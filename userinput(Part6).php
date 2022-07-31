@@ -20,5 +20,9 @@
       Your age is <?php
          echo $_GET["age"];
        ?>
+
+       My name is <?php
+       echo $_GET["name"];
+       ?>
   </body>
 </html>

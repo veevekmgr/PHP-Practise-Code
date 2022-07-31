@@ -13,11 +13,13 @@
 
 
     <?php
+    $students = $_POST["student"];
       $grades = array("Jim"=>"A+", "Pam"=>"B-", "Oscar"=>"C+");
       //$grades["Jim"] = "F";
       //echo count($grades);
       //echo $grades["Jim"];
-      echo $grades[$_POST["student"]];
+      //echo $grades[$_POST["student"]];
+      echo $grades[$students];
     ?>
 
   </body>

@@ -27,15 +27,40 @@
     //  function isNumeric($isEven){
       //  if
       //}
-      if ($isEven % 2 == 0) {
-        echo "Entered number is Even.";
-      }elseif (is_numeric ($isEven) ) {
+      if (empty($isEven)) {
         echo "Input place is empty .Please input number again";
+      } elseif ($isEven % 2 == 0) {
+        echo "$isEven is Even."; 
       }
       else {
-        echo "Entered number is odd.";
+        echo "$isEven is odd.";
       }
 
+      //revise if and ifelsestatement
+      $firstNumber = 2;
+      if($firstNumber == 0){
+        echo "<br>First Number is $firstNumber";
+      }else{
+        echo "<br>First Number is 0 not $firstNumber";
+      }
+
+
+      //nested if/else statement
+      $number = array (100, 40, 200 );
+      if($number[0]>$number[1] && $number[0]>$number[2]){
+            echo "$number[0] is greatest among all";
+          }
+        if($number[1] > $number[0] && $number[1] > $number[2]){
+          echo "$number[1] is greatest.";
+        }       
+        if($number[2] > $number[0] && $number[2] > $number[1]){
+          echo "$number[2] is greatest.";
+        } 
+
+        //ternary operator
+        $guest = 'Vivek';
+        $message = '<br>Hello'." ".($user==!Null?$user:$guest);
+        echo $message;
     ?>
   </body>
 </html>

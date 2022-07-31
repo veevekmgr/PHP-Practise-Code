@@ -30,7 +30,15 @@
         echo ceil(3.3);
         //make floating integer less
         echo floor(3.9);
-     ?>
+
+        echo pow(3,2);
+
+        $num = 1;
+        $num ++;
+        echo "n = $num";
+        $num --;
+        echo "n= $num";   
+    ?>
 
   </body>
 </html>

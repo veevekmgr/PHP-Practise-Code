@@ -6,16 +6,26 @@
   </head>
   <body>
     <form action="checkbox(part12).php" method="post">
-      Apples: <input type="checkbox" name="fruits[]" value="apples"><br>
-      Oranges: <input type="checkbox" name="fruits[]" value="oranges"><br>
-      Pears: <input type="checkbox" name="fruits[]" value="pears"><br>
+    Which fruits do you like?<br>
+      Apples: <input type="checkbox" name="fruits[]" value="Apples"><br>
+      Oranges: <input type="checkbox" name="fruits[]" value="Oranges"><br>
+      Pears: <input type="checkbox" name="fruits[]" value="Pears"><br>
       <input type="submit">
     </form>
 
 
     <?php
     $fruits = $_POST["fruits"];
-    echo $fruits[0];
+    if(empty($fruits)){
+      echo "You didn't select any fruits. Thats means you dont like any fruits above listed.";
+    }else{
+      $N = count($fruits);
+      echo ("You selected $N fruit(s).");
+      for($i=0; $i< $N;$i++){
+        echo($fruits[$i]." ");
+      }
+    }
+
     ?>
   </body>
 </html>

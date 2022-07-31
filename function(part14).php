@@ -13,6 +13,18 @@
       sayHi("Mike",30);
       sayHi("Tom",20);
       sayHi("Dave",35);
-    ?>
+
+      //revise
+      function sayHello(){
+        return "Hello!";
+      }
+      echo sayHello();
+
+      function employee($emp_name,$emp_id){
+        
+        echo $emp_name."<br>".$emp_id;
+      }
+      employee("Ram Khadka", 1);
+      ?>
   </body>
 </html>
